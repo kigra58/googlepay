@@ -15,7 +15,7 @@ const Checkout = () => {
       try {
         const { data } = await axios.post(
         //   "http://localhost:4041/create-payment-intent",
-          "https://39ec-122-160-11-153.ngrok-free.app/create-payment-intent",
+          "https://e19d-122-160-11-153.ngrok-free.app/create-payment-intent",
           { amount: 100, currency: "usd" }
         );
 
@@ -72,7 +72,7 @@ const Checkout = () => {
         <h1> Pay </h1>
         {/* { ( */}
           <IonButton onClick={handleCheckout} disabled={loading}>
-            {loading ? "Loading..." : "Checkout - Payment Sheet"}
+            {loading ? "Loading..." : "Checkout"}
           </IonButton>
         {/* )} */}
       </>
